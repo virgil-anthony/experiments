@@ -30,12 +30,14 @@
             }
             h1, h2 {
                 font-family: fantasy;
+                animation: colorchange .5s infinite;
             }
-            h1:hover, h2:hover {
-                background-color:rgb(255, 1, 1);
-            }
-            a:hover, a:active, a:focus {
+           a:hover, a:active, a:focus, li:hover{
                 background-color:yellowgreen;
+            }
+            @keyframes colorchange {
+                from {background-color: red;}
+                to {background-color: blue;}
             }
         </style>
     </head>
@@ -53,9 +55,10 @@
             <li class="people5">Reymark</li>
             <li class="people6">Beauty</li>
             <li><strong>All of my Classmates</strong></li>
+            
         </ul>
         <p>The code of the meet is <a href="https://meet.google.com/lookup/bxt-dzmz-snx"><strong>bxt-dzmz-snx</strong></a>.</p>
-        <p>Please Enter this code in <strong>December 2</strong> at <strong>1:00</strong>.
+        <p>Please Enter this code in <strong>December 2</strong> at <strong>3:00PM</strong>.
         Thank You.</p>
     </body>
 </html>
