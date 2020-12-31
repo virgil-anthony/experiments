@@ -5,89 +5,19 @@
         <title>Corona Virus Tracker</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
-        <style>
-            body {
-                background-color: #005e00;
-                color: white;
-                font-family: sans-serif;
-            }
-            .title {
-                color: red;
-                font-family: 'Ultra', serif;
-            }
-            
-            .corona {
-                width: 500px;
-                border: 10px ridge rgb(255, 0, 0);
-            }
-
-            table {
-                border-collapse: collapse;
-                width: 100%;
-                background-color: white;
-                color: black;
-
-            }
-
-            table td, table th {
-                border: 1px solid #ddd;
-                padding: 8px;
-            }
-
-            table tr:nth-child(even){background-color: #f2f2f2;}
-
-            table tr:hover {background-color: #f2f2f2;}
-
-            table th {
-                padding-top: 12px;
-                padding-bottom: 12px;
-  text-align: left;
-  background-color: #4CAF50;
-  color: white;
-            }
-
-        </style>
-
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+        <script src="js/data.js"></script>
     </head>
-    <body>
+    <body onload="onLoad()">
         <h1 class="title">Corona Virus Tracker</h1>
 
         <img class="corona" src="https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/QID47QDK6MI6VGJDK4DTVXHCPQ.jpg" alt="virus">
         <h2>Countries with cases of COVID-19</h2>
-        <h3>Singapore</h3>
-            <table>
-                <tr>
-                    <th>New cases</th>
-                    <th>Active cases</th>
-                    <th>Recoveries</th>
-                    <th>Deaths</th>
-                    <th>Total cases</th>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>125</td>
-                    <td>58,370</td>
-                    <td>29</td>
-                    <td>59,029</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>125</td>
-                    <td>58,370</td>
-                    <td>29</td>
-                    <td>59,029</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>125</td>
-                    <td>58,370</td>
-                    <td>29</td>
-                    <td>59,029</td>
-                </tr>
-            </table>
-        <h3>Philippines</h3>
-        <table>
+        
+        <table id="virusData">
             <tr>
+                <th>Country</th>
                 <th>New cases</th>
                 <th>Active cases</th>
                 <th>Recoveries</th>
@@ -95,14 +25,6 @@
                 <th>Total cases</th>
             </tr>
         </table>
-        <h3>Japan</h3>
-        <table>
-            <tr>
-                <th>New cases</th>
-                <th>Active cases</th>
-                <th>Recoveries</th>
-                <th>Deaths</th>
-                <th>Total cases</th>
-            </tr>
-        </table>
+        <p>Don't go near to people with COVID-19, stay home, wear a mask when going outside and always pray for your safety.</p>
     </body>
+</html>
